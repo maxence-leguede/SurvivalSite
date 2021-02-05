@@ -1,0 +1,175 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+
+    z-index: 4;
+
+}
+
+header a:nth-child(1) {
+    margin-left: 40px;
+}
+
+header img {
+    height: 64px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+header #right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+header a#connect {
+    padding: 7px 12px;
+    text-decoration: none;
+
+    border: 1px solid #34a8eb;
+    border-radius: 10px;
+
+    color: #34a8eb;
+}
+
+.scene {
+    position: relative;
+    top: 0;
+    height: fit-content;
+    width: 100%;
+
+    overflow-x: hidden;
+}
+
+
+.scene.background-image img {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.scene.background-image div {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    color: white;
+
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+.scene.background-image.right div {
+
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    width: 95vw;
+    
+    padding-left: 0px;
+    z-index: 1;
+}
+
+.scene.background-image div h2 {
+    font: roboto-black;
+    color: #FF4741;
+
+    font-size: 64px;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+
+.scene.background-image.right div p,
+.scene.background-image.right div h2
+{
+    text-align: right;
+}
+
+
+.scene.background-image div p {
+    font:roboto-medium;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+
+    margin-top: 20px;
+    margin-right: 4px;
+
+    margin-bottom: 40px;
+}
+
+.scene.background-image div b {
+    color: #FF4741;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#transition {
+    z-index: 4;
+}
+
+#intro {
+    z-index: 1;
+}
+
+.transition-out {
+    animation: 1s fade-out;
+    opacity: 0;
+}
+
+.transition-in {
+    animation: 1s fade-out reverse;
+    opacity: 1;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+  
+  /* width */
+::-webkit-scrollbar {
+    width: 0;
+}
+  
